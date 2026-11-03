@@ -3,13 +3,14 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "dev" class ="com.nerchuko.Dev">
-    <!-- <property name = "age" value = "14" /> -->
-    <property name = "laptop" ref = "lap1"/>
-    <constructor-arg ref = "lap1"/>
-    </bean>
-    <bean id = "lap1" class ="com.nerchuko.Laptop">
+    <bean id = "dev" class ="com.nerchuko.Dev" autowire = "byType" >
+    <!-- <property name = "com" ref = "com"/> -->
+
 
     </bean>
+    <bean id = "com" class ="com.nerchuko.Laptop" primary = "true">
+
+    </bean>
+    <bean id="desk1" class="com.nerchuko.Desktop" />
 
 </beans>

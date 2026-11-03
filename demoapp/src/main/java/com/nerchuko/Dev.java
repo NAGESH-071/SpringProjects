@@ -2,60 +2,28 @@ package com.nerchuko;
 
 public class Dev
 {
-    private int age;
-    private Laptop laptop;
+   
+    private Computer com;
 
     public Dev()
     {
         System.out.println("Dev constructor");
     }
-        // public int getAge()
-        // {
-        //     return age;
-        // }
-
-        // public void setAge(int age)
-        // {
-        //     this.age = age;
-        // }
-    
-    public Dev(Laptop laptop)
+       public Computer getCom()
+       {
+        return com;
+       } 
+       public void setCom(Computer com)
+       {
+        this.com = com;
+       }
+        public void build()
     {
-        this.laptop = laptop;
-        System.out.println("Devs cosntructor");
+        //com.compile();
+        System.out.println("building an awesome project");
     }
-        public Laptop getlaptop()
-        {
-            return laptop;
-        }
-        public void setlaptop(Laptop laptop)
-        {
-            this.laptop = laptop;
-        }
-    
-    public Dev(int age)
-    {
-        this.age = age;
-        System.out.println("Dev1 constructor");
-    }
-    public int getAge()
-    {
-        return  age ;
-    }
-    
-    public void setAge(int age)
-    {
-        this.age = age;
-    }
-        
-        
-
-
 }
-    // public void build()
-    // {
-    //     System.out.println("building and awesome project");
-    // }
+   
 
     
 

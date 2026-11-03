@@ -8,9 +8,10 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Dev obj = (Dev) context.getBean("dev");
-        //obj.build();
-        System.out.println(obj.getAge());
+        Dev obj =  context.getBean(Dev.class);
+         obj.build();
+       
+        //System.out.println(obj.getCom());
         
     }
     
